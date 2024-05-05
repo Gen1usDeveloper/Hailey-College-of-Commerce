@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+body{
+    background: #c9ccd1;
+}
+
+#background{
+    width: 1000px;
+    height: 600px;
+    background-image: url("images/bg4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+#login {
+    background: rgba( 23, 1, 1, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+    float: right;
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px;
+  }
+
+.form-style input{
+    border: 0;
+    height: 50px;
+    border-radius: 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.form-style input:focus{
+    border-bottom: 1px solid #007bff;
+    box-shadow: none;
+    outline: o;
+    background-color: #ebebeb;
+}
+
+.sideline{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+}
+
+button{
+    height: 50px;
+}
+.pb-2 a{
+    text-decoration: none;
+    color: white;
+    fill: white;
+    text-size-adjust: medium;
+}
+.sideline::before,.sideline::after{
+content: '';
+border-top: 1px solid #ebebeb;
+margin: 0 20px 0 0;
+flex: 1 0 20px;
+}
+
+.sideline::after{
+    margin: 0 0 0 20px;
+}
+
+.flipped{
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateY(0deg);
+}
+
+.reverse{
+    transition: 0.6s;
+    transform-style:preserve-3d ;
+    position: relative;
+    transform: rotateY(180deg);
+}
+
+.correct{
+    opacity: 0.5;
+    cursor: default;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateY(0deg);
+}
+/**Icons*/
+.correct[data-item="saas"], .flipped[data-item="saas"]{
+    background-color: url("https://cathydutton.co.uk/images/tech.sass.jpg") left center no-repeat #fff;
+    background-size: contain;
+}
+
+.correct[data-item="gulp"], .flipped[data-item="gulp"]{
+    background: url("https://cathydutton.co.uk/images/tech.gulp.jpg") left center no-repeat #fff;
+    background-size: contain;
+}
+
+@media (max-width:428px) {
+    /*Iphone 12 pro**/
+    
+    #background{
+        width: 300px;
+        height: 500px;
+        margin-top: 30px !important;
+        padding:10px;
+    }
+    .pb-3{
+        font-size: x-large;
+
+    }
+    #exampleInputEmail {
+        height: 40px !important;
+        width: 200px;
+        border-radius: 20px;
+        margin-left: 20px;
+    }
+    #exampleInputPassword {
+        height: 40px;
+        width: 200px;
+        border-radius: 20px;
+        margin-left: 20px;
+    }
+    #forget{
+        font-size: small !important;
+    }
+    #pl-2{
+        font-size:small !important;
+    }
+    .p-5 {
+        padding: 10px !important;
+    }
+    .sideline{
+        margin-top: 20px;
+        font-size: medium;
+    }
+    .pb-2{
+        height: 40px;
+        width: 80% !important;
+        margin-left: 25px;
+    }
+}

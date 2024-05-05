@@ -1,0 +1,74 @@
+body{
+    background-color: aliceblue;
+}
+.card-header{
+    background-color: white;
+    height: 80px;
+}
+.card-header img{
+    height: 70px;
+}
+.card-header h4{
+    text-align: left;
+    padding-top: 40px;
+    margin-left: 20px;
+    display: inline;
+}
+.card-header #profile{
+    size: 40%;
+    height: 40px;
+    border-radius: 65%;
+    text-align: right;
+}
+/* notification bell */
+#notificationBell {
+   height: 40%;
+}
+
+#nav-bar {
+    width: 100px;
+    border-bottom-right-radius: 10px;
+    height: 350px;
+    padding-top: 20px;
+    left: 2px;
+    top: 119px;
+    position: absolute;
+    background: #D9D9D9;
+    overflow: hidden;
+  }
+
+  #nav-bar a {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #nav-bar a img {
+    width: 100%; /* Make the image width 100% of the parent container */
+  }
+#nav-bar img{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#nav-bar a:hover {
+    width:40px;
+}
+
+#home{
+    width: 30px;
+    height: 40px;
+}
+#profile{
+    width: 20px;
+    height: 30px;
+}
+
+#apply{
+    width: 20px;
+    height: 30px;
+}
+
+#logout{
+    width: 20px;
+    height: 30px;
+}

@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: #f1f1f1;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.user-profile p {
+    margin: auto;
+    font-size: 13px;
+    color: #333;
+}
+
+.humburg-menu {
+    display: none;
+}
+
+.sidebar {
+    padding-top: 20px;
+    margin-top: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 100vh;
+    background-color: #f1f1f1;
+    overflow-y: auto;
+    border-top-right-radius: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar a:hover {
+    background-color: #ccc;
+    color: #fff;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+ /* Style the search container */
+ .search-container {
+    position: relative;
+    display: inline-block;
+
+}
+
+/* Style the search input */
+.search-input {
+    padding: 8px 30px 8px 8px; /* Adjust the padding as needed */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline:none;
+    margin-top: 2px;
+    margin-left: 20px;
+    width: 250px; /* Adjust the width as needed */
+    height: 30px;
+}
+
+/* Style the search icon */
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    color: #888;
+    cursor: pointer;
+}
+
+#info-bar {
+    display: inline;
+    border-radius: 10px;
+}
+
+#records {
+    margin-left: 10px;
+}
+
+.search-container {
+    margin-right: 100px; /* Adjust margin as needed */
+}
+
+
+@media (max-width: 768px) {
+    .humburg-menu {
+        display: block;
+    }
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .sidebar li {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .sidebar a {
+        text-align: center;
+    }
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+body{
+    background: #c9ccd1;
+}
+
+#background{
+    width: 1000px;
+    height: 600px;
+    background-image: url("images/bg4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+#login {
+    background: rgba( 23, 1, 1, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+    float: right;
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px;
+  }
+  
+  
+.form-style input{
+    border: 0;
+    height: 50px;
+    border-radius: 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.form-style input:focus{
+    border-bottom: 1px solid #007bff;
+    box-shadow: none;
+    outline: o;
+    background-color: #ebebeb;
+}
+
+button{
+    height: 50px;
+}

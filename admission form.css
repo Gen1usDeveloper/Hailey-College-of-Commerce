@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+body{
+  background-image: url('pexels-king-cyrus-studios-6371893.jpg');
+  background-size: cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.panel-heading{
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+  border-radius: 10px;
+  border: 1px solid rgba(255, 253, 253, 0.18);
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    width:50%;
+    margin:0 auto;
+    padding:10px;
+  }
+  .container-fluid,.col-lg-8{
+    margin-top: 20px;
+    border-radius: 30px;
+  }
+
+  .form-horizontal {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+#form-body {
+    background-color: rgba(255, 255, 255, 0.5); /* adjust the alpha value for transparency */
+}
+.panel-transparent {
+  background: none;
+  border: none;
+}
+.panel-transparent .panel-heading {
+  background: rgba(122, 122, 122, 0.0);
+  border-color: rgba(122, 122, 122, 0.0);
+}
+.panel-transparent .panel-body {
+  background: rgba(255, 255, 255, 0.3);
+}
+/*
+.col-lg-2{
+  display:inline-flexbox;
+} */
